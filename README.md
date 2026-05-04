@@ -1,2 +1,3 @@
 # poo_projeitos_de_aula
-repositório dos codigos das aulas de POO
+repositório dos codigos das aulas de POO 
+Aluna: Yasmim Castilho
