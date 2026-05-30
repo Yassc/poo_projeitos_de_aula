@@ -60,7 +60,7 @@ public class GerenciadorDeFilmesTest {
 
         String removido = gerenciador.removerPorAno(2010);
         assertNotNull(removido);
-        assertEquals("Filme do ano 2010 removed com sucesso!", removido);
+        assertEquals("Filme do ano 2010 removido com sucesso!", removido);
 
         assertThrows(filmeNaoEncontradoException.class, () -> {
             gerenciador.buscarPorTitulo("Percy Jackson e o Ladrão de Raios");

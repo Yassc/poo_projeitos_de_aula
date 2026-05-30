@@ -35,7 +35,7 @@ public class GerenciadorDeFilmes {
         for (Filme f : listaDeFilmes.values()) {
             if (f.getAno() == ano) {
                 remover = f.getTitulo().toLowerCase();
-                return "Filme do ano " + ano + " removido com sucesso!";
+               break;
             }
         }
         if (remover != null) {
