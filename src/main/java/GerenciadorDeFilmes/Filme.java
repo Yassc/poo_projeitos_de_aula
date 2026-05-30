@@ -1,6 +1,6 @@
 package GerenciadorDeFilmes;
 
-public class Filme {
+public class Filme implements java.io.Serializable{
 
     private String titulo;
     private String diretor;

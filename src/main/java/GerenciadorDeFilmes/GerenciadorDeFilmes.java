@@ -22,8 +22,7 @@ public class GerenciadorDeFilmes {
     }
 
     public Filme buscarPorTitulo(String titulo) throws filmeNaoEncontradoException {
-
-        Filme f = listaDeFilmes.get(titulo);
+        Filme f = listaDeFilmes.get(titulo.toLowerCase());
 
         if (f == null) {
             throw new filmeNaoEncontradoException(titulo);
@@ -32,12 +31,16 @@ public class GerenciadorDeFilmes {
     }
 
     public String removerPorAno(int ano) throws filmeNaoEncontradoException {
-
+        String remover = null;
         for (Filme f : listaDeFilmes.values()) {
             if (f.getAno() == ano) {
-                listaDeFilmes.remove(f.getTitulo().toLowerCase());
+                remover = f.getTitulo().toLowerCase();
                 return "Filme do ano " + ano + " removido com sucesso!";
             }
+        }
+        if (remover != null) {
+            listaDeFilmes.remove(remover);
+            return "Filme do ano " + ano + " removido com sucesso!";
         }
 
         throw new filmeNaoEncontradoException("Não há filmes do ano " + ano + " no catálogo.");
@@ -67,7 +70,7 @@ public class GerenciadorDeFilmes {
             }
         }
     }
-    // Adicione isso no final do seu GerenciadorDeFilmes:
+
     public void salvarDados() throws IOException {
         GravadorDeDados gravador = new GravadorDeDados();
         gravador.salvar(this.listaDeFilmes, this.filmesFavoritos);
