@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GerenciadorDeFilmes {
+public class GerenciadorDeFilmes implements InterfaceGerenciador {
     private Map<String, Filme> listaDeFilmes;
     private Map<String, Filme> filmesFavoritos;
 
