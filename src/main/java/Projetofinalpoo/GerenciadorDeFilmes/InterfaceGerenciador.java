@@ -1,4 +1,4 @@
-package GerenciadorDeFilmes;
+package Projetofinalpoo.GerenciadorDeFilmes;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package GerenciadorDeFilmes;
+package Projetofinalpoo.GerenciadorDeFilmes;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package GerenciadorDeFilmes;
+package Projetofinalpoo.GerenciadorDeFilmes;
 
 import org.junit.Test;
 import static org.testng.Assert.assertThrows;
